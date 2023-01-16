@@ -19,7 +19,14 @@ buttonAdd.addEventListener('click', () => {
 });
 
 // remove book
-
+// remove book
+const removeEvent = (button, index) => {
+    button.addEventListener("click", function() {
+        delete bookData[index]
+        this.parentNode.remove();
+        window.localStorage.setItem("bookData", JSON.stringify(bookData));
+    });
+}
 
 // return retrieved book
 const retrieveAndDisplayData = () => {
