@@ -2,42 +2,50 @@ const buttonAdd = document.querySelector('#add');
 const bookTitle = document.querySelector('#title');
 const bookAuthor = document.querySelector('#author');
 const bookDisplay = document.querySelector('#display');
-const bookData = {};
-let bookIndex = 0;
-// remove book
-const removeEvent = (button, index) => {
-  button.addEventListener('click', function () {
-    delete bookData[index];
-    this.parentNode.remove();
-    window.localStorage.setItem('bookData', JSON.stringify(bookData));
+
+const books = JSON.parse(localStorage.getItem('books')) || [];
+
+const addBook = (title, author) => {
+  books.push({ title, author });
+  localStorage.setItem('books', JSON.stringify(books));
+  // eslint-disable-next-line no-use-before-define
+  render();
+};
+
+const removeBook = (index) => {
+  books.splice(index, 1);
+  localStorage.setItem('books', JSON.stringify(books));
+  // eslint-disable-next-line no-use-before-define
+  render();
+};
+
+const render = () => {
+  bookDisplay.innerHTML = '';
+  books.forEach((book, index) => {
+    const div = document.createElement('div');
+    div.innerHTML = `
+            ${book.title}<br>
+            ${book.author}<br>
+            <button class="remove-button" data-index="${index}">Remove</button>
+            <br><br>
+            <hr>
+        `;
+    bookDisplay.appendChild(div);
+  });
+
+  document.querySelectorAll('.remove-button').forEach((button) => {
+    button.addEventListener('click', () => {
+      removeBook(button.getAttribute('data-index'));
+    });
   });
 };
 
-// add book
+render();
+
 buttonAdd.addEventListener('click', () => {
-  const bookTitleValue = bookTitle.value;
-  const bookAuthorValue = bookAuthor.value;
-  bookData[bookIndex] = { title: bookTitleValue, author: bookAuthorValue };
-  bookIndex += 1;
-  const newDiv = document.createElement('div');
-  newDiv.innerHTML = `${bookData[bookIndex - 1].title}<br>${bookData[bookIndex - 1].author}<br> <button id='remove'>remove</button> <br> <br> <hr>  `;
-  bookDisplay.appendChild(newDiv);
-  removeEvent(newDiv.querySelector('#remove'), bookIndex - 1);
-  window.localStorage.setItem('bookData', JSON.stringify(bookData));
+  const title = bookTitle.value;
+  const author = bookAuthor.value;
+  addBook(title, author);
+  bookTitle.value = '';
+  bookAuthor.value = '';
 });
-
-// return retrieved book
-const retrieveAndDisplayData = () => {
-  const retrievedBookData = JSON.parse(window.localStorage.getItem('bookData'));
-  if (retrievedBookData) {
-    for (let i = 0; i < Object.keys(retrievedBookData).length; i += 1) {
-      const newDiv = document.createElement('div');
-      newDiv.innerHTML = `${retrievedBookData[i].title}<br>${retrievedBookData[i].author}<br> <button id='remove'>remove</button> <br> <br>`;
-
-      bookDisplay.appendChild(newDiv);
-      removeEvent(newDiv.querySelector('#remove'), i);
-    }
-  }
-};
-
-retrieveAndDisplayData();
