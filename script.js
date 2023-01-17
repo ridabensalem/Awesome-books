@@ -22,30 +22,26 @@ class Book {
 
   render() {
     this.bookDisplay.innerHTML = '';
-    this.bookDisplay.classList.add("book_container");
-    if(this.books.length === 0){
-     this.bookDisplay.classList.remove("book_container");
-  }
+    this.bookDisplay.classList.add('book_container');
+    if (this.books.length === 0) {
+      this.bookDisplay.classList.remove('book_container');
+    }
     this.books.forEach((book, index) => {
       const div = document.createElement('div');
       div.innerHTML = `
-                ${book.title} &nbsp By 
+       &nbsp ${book.title} &nbsp By 
                 ${book.author}
                 <button class="remove-button" data-index="${index}">Remove</button>
                 <br><br>
             `;
-            if(index%2===0){
-              div.style.background="#dddddd";
-             }
-             else{
-               div.style.background="#fff";
-                  }
-            
-            
+      if (index % 2 === 0) {
+        div.style.background = '#dddddd';
+      } else {
+        div.style.background = '#fff';
+      }
+
       this.bookDisplay.appendChild(div);
       div.classList.add('book_list_container');
-     
-      
     });
 
     document.querySelectorAll('.remove-button').forEach((button) => {
