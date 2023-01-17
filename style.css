@@ -30,12 +30,13 @@ text-align: center;
   width: 50%;
 }
 .book_list_container{
-  display: flex;
- justify-content: space-between;
- border: 1px solid red;
+  /* display: flex; */
+ /* justify-content: space-between;
+ border: 1px solid red; */
 }
 .book_list_container button{
   position: relative;
+  float:right;
   height: 8%;
   margin-top: 5px;
   border-bottom: 4px outset var(--black-color);

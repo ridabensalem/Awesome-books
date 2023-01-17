@@ -34,12 +34,17 @@ class Book {
                 <button class="remove-button" data-index="${index}">Remove</button>
                 <br><br>
             `;
-            
+            if(index%2===0){
+              div.style.background="#dddddd";
+             }
+             else{
+               div.style.background="#fff";
+                  }
             
             
       this.bookDisplay.appendChild(div);
       div.classList.add('book_list_container');
-    
+     
       
     });
 
