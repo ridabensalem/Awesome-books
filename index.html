@@ -15,6 +15,22 @@
 
 <body>
     <h1> All Awesome books</h1>
+    <div class="navigation">
+    <nav>
+        
+        <ul>
+            <li><a href="index.html">Awesome books</a></li>
+        </ul>
+        <ul>
+            <li> <a href="list.html">List</a>  </li>
+            <div class="divider"></div>
+            <li> <a href="index.html">Add new</a> </li>
+            <div class="divider"></div>
+            <li> <a href="contact.html">Contact</a> </li>
+        </ul>
+    </nav>
+</div>
+     <div class="date" id="DateTime"></div>
     <div class="wrapper">
         <div id="display">
 
@@ -22,10 +38,7 @@
         </div>
         <br>
         <div class="input_container">
-            <div class="seperator"></div> <br>
-            <h2>Add a new book</h2>
-           
-
+            <h2>Add a new book</h2> <br> <br> <br>
             <input type="text" name="title" id="title" placeholder="Title" class="input_title"> <br>
             <input type="text" name="Author" placeholder="Author" id="author" class="input_author"> <br>
         </div>
@@ -33,9 +46,15 @@
             <button id="add"> Add</button>
         </div>
 
-        <script src="script.js"></script>
+        
 
     </div>
+    <footer>
+        <div class="footer-container">
+            <p>Copyright  <span class="dots">...</span></p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
 </body>
 
 </html>
