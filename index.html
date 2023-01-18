@@ -14,29 +14,23 @@
 </head>
 
 <body>
-    <h1> All Awesome books</h1>
     <div class="navigation">
-    <nav>
-        
-        <ul>
-            <li><a href="index.html">Awesome books</a></li>
-        </ul>
-        <ul>
-            <li> <a href="list.html">List</a>  </li>
-            <div class="divider"></div>
-            <li> <a href="index.html">Add new</a> </li>
-            <div class="divider"></div>
-            <li> <a href="contact.html">Contact</a> </li>
-        </ul>
-    </nav>
-</div>
-     <div class="date" id="DateTime"></div>
-    <div class="wrapper">
-        <div id="display">
+        <nav>
 
-
-        </div>
-        <br>
+            <ul>
+                <li><a href="index.html">Awesome books</a></li>
+            </ul>
+            <ul>
+                <li> <a href="#" id="list_link">List</a> </li>
+                <div class="divider"></div>
+                <li> <a href="#" id="new_book_link">Add new</a> </li>
+                <div class="divider"></div>
+                <li> <a href="#" id="contact_link">Contact</a> </li>
+            </ul>
+        </nav>
+    </div>
+    <div class="date" id="DateTime"></div>
+    <div class="wrapper" id="wrapper">
         <div class="input_container">
             <h2>Add a new book</h2> <br> <br> <br>
             <input type="text" name="title" id="title" placeholder="Title" class="input_title"> <br>
@@ -46,12 +40,40 @@
             <button id="add"> Add</button>
         </div>
 
-        
 
+
+    </div>
+    <div class="list_container" id="list_container">
+        <h1> All Awesome books</h1>
+        <div class="wrapper">
+            <div id="display">
+
+
+            </div>
+            <br>
+
+
+
+
+        </div>
+    </div>
+    <div class="contact_container" id="contact_container">
+        <div class="contact_content">
+            <h2> Contact information</h2>
+            <p>Do have any questions or you just want to say "Hello"? <br> you can reach out to us!</p>
+
+            <div>
+                <ul class="contactlist">
+                    <li>our e-mail: mail@mail.com</li>
+                    <li>our phone number: 00043567894522</li>
+                    <li>our address: Street name 22, 84503 City, Country</li>
+                </ul>
+            </div>
+        </div>
     </div>
     <footer>
         <div class="footer-container">
-            <p>Copyright  <span class="dots">...</span></p>
+            <p>Copyright <span class="dots">...</span></p>
         </div>
     </footer>
     <script src="script.js"></script>
