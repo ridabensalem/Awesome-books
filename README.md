@@ -63,8 +63,6 @@ After you're finished please remove all the comments and instructions!
  <a name="about-project"></a>
 
 
-**[Awesome-books]** is a simple app that add books , remove them and display the added books 
-=======
 **[Awesome-books]** is an appplication that add books and remove them.
 
 ## 🛠 Built With <a name="built-with"></a>
@@ -199,7 +197,6 @@ Example:
 
 ## 👥 Authors <a name="authors"></a>
 
-> Mention all of the collaborators of this project.
 
 👤 **Author1**
 
@@ -208,10 +205,9 @@ Example:
 - LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
 
 👤 **Author2**
-
-- GitHub: [@ridabensalem](https://github.com/githubhandle)
-- Twitter: [@tridabensalem](https://twitter.com/ridabensalem)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+-   GitHub: [DamenaM](https://github.com/DamenaM)
+- Twitter: [@DamenaM](https://twitter.com/DamenaM)
+- LinkedIn: [Mihertab Damena](linkedin.com/in/DamenaM)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
