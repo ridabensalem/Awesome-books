@@ -16,22 +16,62 @@
   justify-content: center;
   align-items: center;
 }
+.navigation nav{
+  display: flex;
+  flex-direction: row;
+  border: 4px solid var(--black-color);
+  justify-content: space-between;
+  gap: 10px;
+  
+}
+.date{
+  display: flex;
+  justify-content: flex-end;
+  padding-top: 5px;
+}
+ul{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 15px;
+  padding-right: 20px; 
+}
+.divider{
+  width: 2px;
+  background-color: var(--black-color);
+  height: 20px;
+}
+li{
+  list-style-type: none;
+}
+a{
+  text-decoration: none;
+  color: var(--black-color);
 
+}
 h1 {
+  display: none;
   text-align: center;
   padding-top: 2%;
 }
 
 h2 {
   text-align: center;
+  font-size: 50px;
 }
 
 .book_container {
-  display: flex;
+  display: none;
   flex-direction: column;
   justify-content: space-between;
   border: 4px solid var(--black-color);
   width: 50%;
+}
+.footer-container {
+  border: 4px solid var(--black-color);
+  display:flex;
+  margin-top: 452px;
+  padding-left: 20px;
 }
 
 .book_list_container button {
@@ -61,6 +101,7 @@ h2 {
 .input_author {
   border: 4px outset var(--black-color);
   font-weight: bolder;
+  height: 40px;
 }
 
 .input_title::placeholder {
@@ -78,7 +119,9 @@ h2 {
 .button_container {
   display: flex;
   justify-content: flex-end;
-  width: 20%;
+  text-align: center;
+  justify-items: center;
+ 
 }
 
 .seperator {
@@ -95,4 +138,7 @@ h2 {
   background-color: var(--white-bg-color);
   border-left: 2px solid var(--black-color);
   border-top: 2px solid var(--black-color);
+  height: 40px;
+  padding: 15px;
+ 
 }
