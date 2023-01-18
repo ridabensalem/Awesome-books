@@ -29,7 +29,7 @@ After you're finished please remove all the comments and instructions!
   <!-- You are encouraged to replace this logo with your own! Otherwise you can also remove it. -->
   <br/>
 
-  <h3><b>Microverse README Template</b></h3>
+  <h3><b>AWSOME BOOK</b></h3>
 
 </div>
 
@@ -59,10 +59,13 @@ After you're finished please remove all the comments and instructions!
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 [your_project_name] <a name="about-project"></a>
+# 📖 [Awesome-books]
+ <a name="about-project"></a>
 
 
 **[Awesome-books]** is a simple app that add books , remove them and display the added books 
+=======
+**[Awesome-books]** is an appplication that add books and remove them.
 
 ## 🛠 Built With <a name="built-with"></a>
 
