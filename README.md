@@ -27,7 +27,6 @@ After you're finished please remove all the comments and instructions!
 
 <div align="center">
   <!-- You are encouraged to replace this logo with your own! Otherwise you can also remove it. -->
-  <img src="murple_logo.png" alt="logo" width="140"  height="auto" />
   <br/>
 
   <h3><b>AWSOME BOOK</b></h3>
@@ -63,7 +62,6 @@ After you're finished please remove all the comments and instructions!
 # 📖 [Awesome-books]
  <a name="about-project"></a>
 
-> Describe your project in 1 or 2 sentences.
 
 **[Awesome-books]** is an appplication that add books and remove them.
 
@@ -71,12 +69,10 @@ After you're finished please remove all the comments and instructions!
 
 ### Tech Stack <a name="tech-stack"></a>
 
-> Describe the tech stack and include only the relevant sections that apply to your project.
-
 <details>
   <summary>Client</summary>
   <ul>
-    <li><a href="https://reactjs.org/">React.js</a></li>
+    <li><a href="https://reactjs.org/">JS</a></li>
   </ul>
 </details>
 
@@ -98,11 +94,9 @@ After you're finished please remove all the comments and instructions!
 
 ### Key Features <a name="key-features"></a>
 
-> Describe between 1-3 key features of the application.
-
-- **[key_feature_1]**
-- **[key_feature_2]**
-- **[key_feature_3]**
+- **[Single Page navigation]**
+- **[Adding books, Displaying them]**
+- **[Removing Books]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -110,9 +104,8 @@ After you're finished please remove all the comments and instructions!
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-> Add a link to your deployed project.
 
-- [Live Demo Link](https://yourdeployedapplicationlink.com)
+- [Live Demo Link](https://ridabensalem.github.io/Awesome-books/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -204,19 +197,17 @@ Example:
 
 ## 👥 Authors <a name="authors"></a>
 
-> Mention all of the collaborators of this project.
 
 👤 **Author1**
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
+- GitHub: [@githubhandle](https://github.com/ridabensalem)
 - Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
 - LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
 
 👤 **Author2**
-
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+-   GitHub: [DamenaM](https://github.com/DamenaM)
+- Twitter: [@DamenaM](https://twitter.com/DamenaM)
+- LinkedIn: [Mihertab Damena](linkedin.com/in/DamenaM)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -246,17 +237,14 @@ Feel free to check the [issues page](../../issues/).
 
 ## ⭐️ Show your support <a name="support"></a>
 
-> Write a message to encourage readers to support your project
 
-If you like this project...
+If you like this project Please give it a start and share it with your freinds 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- ACKNOWLEDGEMENTS -->
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
-
-> Give credit to everyone who inspired your codebase.
 
 I would like to thank...
 
@@ -266,15 +254,13 @@ I would like to thank...
 
 ## ❓ FAQ (OPTIONAL) <a name="faq"></a>
 
-> Add at least 2 questions new developers would ask when they decide to use your project.
+- **[What is the most intersting part about this project]**
 
-- **[Question_1]**
+  - [Singla navigations and the functionality of adding , removing, and displaying books] 
 
-  - [Answer_1]
+- **[What do you want to improve in the future]**
 
-- **[Question_2]**
-
-  - [Answer_2]
+  - [Upgrading the project form meduim wireframe to gigh wireframe ]
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
