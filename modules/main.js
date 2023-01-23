@@ -61,3 +61,4 @@ book.buttonAdd.addEventListener('click', () => {
   book.bookTitle.value = '';
   book.bookAuthor.value = '';
 });
+export default Book;
